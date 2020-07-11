@@ -1,0 +1,8 @@
+apiVersion: eksctl.io/v1alpha5
+kind: storageClass
+metadata: 
+  name: mysc
+provisioner: kubernetes.io/aws-ebs
+perameters:
+  type: io1
+reclaimPolicy: Retain
